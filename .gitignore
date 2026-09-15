@@ -1,0 +1,12 @@
+# Ignore Windows executable files
+*.exe
+
+# Ignore object files and compiled modules
+*.o
+*.obj
+
+# Ignore VS Code configuration folders (optional, keep if you want clean repos)
+.vscode/
+
+# Ignore crash dumps or logs
+*.log
