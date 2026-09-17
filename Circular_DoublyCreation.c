@@ -2,9 +2,9 @@
 #include<stdlib.h>
 
 struct node{
+    struct node* prev;
     int data;
     struct node* link;
-    struct node* prev;
 };
 struct node* head = NULL;
 
@@ -13,7 +13,7 @@ void createNode(int data){
     temp->data = data;
     temp->link = temp;
     temp->prev = temp;
-    head= temp;
+    head = temp;
 };
 
 
@@ -21,7 +21,7 @@ void createNode(int data){
 
 int main(){
     createNode(1);
-    // add_to_beg(2);
+    
     printf("%d", head->data);
     return 0;
 }
